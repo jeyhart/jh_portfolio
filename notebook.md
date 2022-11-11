@@ -115,6 +115,10 @@ ORDER BY sum DESC;
 <p>Now, let's broaden our understanding of the dataset by looking at all names. We'll attempt to capture the type of popularity that each name in the dataset enjoyed. Was the name classic and popular across many years or trendy, only popular for a few years? Let's find out. </p>
 
 
+```sql
+%%sql
+postgresql:///names
+
 SELECT
     first_name,
     SUM(num) AS sum,
